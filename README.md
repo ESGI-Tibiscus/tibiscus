@@ -6,3 +6,5 @@ Enzo Huynh
 Amandine Ripoll
 
 Dylan Correia
+
+Leo Wattier
