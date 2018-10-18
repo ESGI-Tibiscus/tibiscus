@@ -32,4 +32,4 @@ jobs:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
       # run tests!
-      - run: phpunit
+      - run: ./vendor/bin/phpunit --bootstrap vendor/autoload.php src/TestEmail.php
