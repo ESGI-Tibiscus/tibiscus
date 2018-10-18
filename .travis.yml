@@ -1,3 +1,13 @@
 language: php
 sudo: enabled
-os: debian
+php:
+  - 5.5
+  - 5.6
+  - 7.0
+branches:
+  only:
+    develop
+before_install:
+  - composer install
+script: ./vendor/bin/phpunit --bootstrap vendor/autoload.php src/TestEmail.php
+
